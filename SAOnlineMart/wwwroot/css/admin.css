@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: -250px;
+}
+
+#wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar-wrapper {
+    min-width: 250px;
+    max-width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+.card {
+    border-radius: 10px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.navbar {
+    padding: 10px 20px;
+}
+
+.btn-primary, .btn-success, .btn-warning, .btn-danger {
+    border-radius: 5px;
+}

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SAOnlineMart.Models.DataModels.Product>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.Description</td>
+                <td>@product.Price</td>
+                <td>
+                    <a href="@Url.Action("In stock", new { id = product.ProductId })" class="btn btn-success">In stock</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

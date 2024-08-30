@@ -1,0 +1,260 @@
+﻿@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+
+<style>
+    
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        color: white;
+    }
+
+    #productFormContainer,
+    #productFormContainer * {
+        color: white;
+        
+    }
+
+    
+        #productFormContainer table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #productFormContainer th, #productFormContainer td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            color: white; 
+        }
+
+        #productFormContainer th {
+            background-color: rgba(255, 255, 255, 0.2); 
+        }
+
+        #productFormContainer td {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<div class="content-wrapper">
+<h1 class="mt-4">Admin Dashboard</h1>
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="card bg-primary text-white mb-4">
+            <div class="card-body">Total Products</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#" id="viewProductsLink">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="card bg-warning text-white mb-4">
+                <div class="card-body">Pending Orders</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="#" id="viewPendingOrdersLink">View Details</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+        </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card bg-success text-white mb-4">
+            <div class="card-body">Completed Orders</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="@Url.Action("Index", "Order")">View Details</a>
+                <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+            <div class="card bg-danger text-white mb-4">
+                <div class="card-body">Admin Users</div>
+                <div class="card-footer d-flex align-items-center justify-content-between">
+                    <a class="small text-white stretched-link" href="#" id="viewAdminUsersLink">View Details</a>
+                    <div class="small text-white"><i class="fas fa-angle-right"></i></div>
+                </div>
+            </div>
+
+    </div>
+</div>
+
+<div class="row mt-4">
+    <div class="col-lg-4">
+        <div class="card bg-info text-white mb-4">
+            <div class="card-body">Add New Product</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#" id="addProductLink">Add Product</a>
+                <div class="small text-white"><i class="fas fa-plus"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card bg-secondary text-white mb-4">
+            <div class="card-body">Edit Existing Product</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#" id="editProductLink">Edit Product</a>
+                <div class="small text-white"><i class="fas fa-edit"></i></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="card bg-dark text-white mb-4">
+            <div class="card-body">Remove Product</div>
+            <div class="card-footer d-flex align-items-center justify-content-between">
+                <a class="small text-white stretched-link" href="#" id="removeProductLink">Remove Product</a>
+                <div class="small text-white"><i class="fas fa-trash"></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="productFormContainer"></div>
+    <div id="pendingOrdersContainer" class="mt-4"></div>
+</div>
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#viewProductsLink').click(function (e) {
+                e.preventDefault();
+                $('#productFormContainer').load('@Url.Action("Index", "Products")');
+            });
+
+            $('#addProductLink').click(function (e) {
+                e.preventDefault();
+                $('#productFormContainer').load('@Url.Action("AddProductForm", "Products")');
+            });
+
+
+            $(document).ready(function () {
+                $('#viewAdminUsersLink').click(function (e) {
+                    e.preventDefault();
+                    $('#productFormContainer').load('@Url.Action("GetAdminUsers", "AdminUser")');
+                });
+            });
+
+            $(document).ready(function () {
+                console.log('@Url.Action("GetAdminUsers", "AdminUser")'); // URL in console for my debugging.
+            });
+
+            $('#editProductLink').click(function (e) {
+                e.preventDefault();
+                $('#productFormContainer').load('@Url.Action("EditProducts", "Products")');
+            });
+
+            $(document).on('click', '.edit-product-btn', function () {
+                var productId = $(this).data('id');
+                $('#productFormContainer').load('@Url.Action("EditProductForm", "Products")', { id: productId });
+            });
+
+            $(document).on('submit', '#editProductForm', function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("UpdateProduct", "Products")',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.success) {
+                            
+                            $('#productFormContainer').load('@Url.Action("EditProducts", "Products")');
+                        } else {
+                            //empty
+                        }
+                    }
+                });
+            });
+
+
+            $('#removeProductLink').click(function (e) {
+                e.preventDefault();
+                $('#productFormContainer').load('@Url.Action("RemoveProducts", "Products")');
+            });
+
+ 
+            $(document).on('submit', '#addProductForm', function (e) {
+                e.preventDefault();
+
+                var formData = new FormData(this);
+
+                $.ajax({
+                    type: 'POST',
+                    url: '@Url.Action("Create", "Products")',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function (response) {
+                        if (response.success) {
+                            // Clear the form
+                            $('#addProductForm')[0].reset();
+
+                            // Hide error message if previously shown
+                            $('#errorMessage').hide();
+
+                            // Show success message
+                            $('#successMessage').fadeIn().delay(3000).fadeOut();
+                        } else {
+                            // Show error message
+                            $('#errorMessage').fadeIn().delay(5000).fadeOut();
+                        }
+                    },
+                    error: function (response) {
+                        // Hide success message if previously shown
+                        $('#successMessage').hide();
+
+                        // Show error message
+                        $('#errorMessage').fadeIn().delay(5000).fadeOut();
+                    }
+                });
+            });
+        });
+
+
+        $(document).ready(function () {
+            $('#viewPendingOrdersLink').click(function (e) {
+                e.preventDefault();
+                $.ajax({
+                    url: '@Url.Action("PendingOrders", "Order")',
+                    type: 'GET',
+                    success: function (data) {
+                        $('#pendingOrdersContainer').html(data);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error("Error loading pending orders: " + status + " " + error);
+                        console.error("Response Text: " + xhr.responseText);
+                    }
+                });
+            });
+        });
+
+
+
+
+    </script>
+}
+

@@ -1,0 +1,152 @@
+﻿@{
+    ViewData["Title"] = "Settings";
+}
+
+<style>
+  
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        color: white; 
+    }
+
+    
+        .content-wrapper label,
+        .content-wrapper h2,
+        .content-wrapper p {
+            color: white;
+        }
+
+        
+        .content-wrapper input.form-control,
+        .content-wrapper select.form-control,
+        .content-wrapper textarea.form-control {
+            color: black;
+            background-color: white;
+        }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.85); 
+        border: none;
+    }
+
+    .card-header {
+        background-color: rgba(0, 0, 0, 0.1); 
+        color: black; 
+    }
+
+
+    .btn-primary {
+        color: white;
+    }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<!-- Page Content -->
+<div class="content-wrapper">
+    <div class="container">
+        <h2>User Settings</h2>
+
+        <!-- Account Settings -->
+        <div class="card mb-4">
+            <div class="card-header">
+                Account Information
+            </div>
+            <div class="card-body">
+                <form method="post" asp-action="UpdateAccount">
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="Email" name="Email" value="@User.Identity.Name" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="Username">Username</label>
+                        <input type="text" class="form-control" id="Username" name="Username" value="@ViewBag.UserName">
+                    </div>
+                    <div class="form-group">
+                        <label for="Password">Password</label>
+                        <input type="password" class="form-control" id="Password" name="Password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Account</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Address Settings -->
+        <div class="card mb-4">
+            <div class="card-header">
+                Address Information
+            </div>
+            <div class="card-body">
+                <form method="post" asp-action="UpdateAddress">
+                    <div class="form-group">
+                        <label for="FullName">Full Name</label>
+                        <input type="text" class="form-control" id="FullName" name="FullName" value="@ViewBag.FullName">
+                    </div>
+                    <div class="form-group">
+                        <label for="Address">Address</label>
+                        <input type="text" class="form-control" id="Address" name="Address" value="@ViewBag.Address">
+                    </div>
+                    <div class="form-group">
+                        <label for="City">City</label>
+                        <input type="text" class="form-control" id="City" name="City" value="@ViewBag.City">
+                    </div>
+                    <div class="form-group">
+                        <label for="PostalCode">Postal Code</label>
+                        <input type="text" class="form-control" id="PostalCode" name="PostalCode" value="@ViewBag.PostalCode">
+                    </div>
+                    <div class="form-group">
+                        <label for="Country">Country</label>
+                        <input type="text" class="form-control" id="Country" name="Country" value="@ViewBag.Country">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Address</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Payment Settings -->
+        <div class="card mb-4">
+            <div class="card-header">
+                Payment Information
+            </div>
+            <div class="card-body">
+                <form method="post" asp-action="UpdatePayment">
+                    <div class="form-group">
+                        <label for="CardName">Name on Card</label>
+                        <input type="text" class="form-control" id="CardName" name="CardName" value="@ViewBag.CardName">
+                    </div>
+                    <div class="form-group">
+                        <label for="CardNumber">Card Number</label>
+                        <input type="text" class="form-control" id="CardNumber" name="CardNumber" value="@ViewBag.CardNumber">
+                    </div>
+                    <div class="form-group">
+                        <label for="ExpiryDate">Expiry Date</label>
+                        <input type="text" class="form-control" id="ExpiryDate" name="ExpiryDate" value="@ViewBag.ExpiryDate" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group">
+                        <label for="CVV">CVV</label>
+                        <input type="text" class="form-control" id="CVV" name="CVV" value="@ViewBag.CVV">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update Payment Information</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

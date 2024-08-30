@@ -1,0 +1,222 @@
+﻿@model IEnumerable<SAOnlineMart.Models.DataModels.Product>
+
+@{
+    ViewData["Title"] = "Shop";
+    var productsJson = Json.Serialize(Model);
+}
+
+<style>
+
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+        z-index: -1; 
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+    }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<!-- Page Content -->
+<div class="content-wrapper">
+    <!-- Search Bar -->
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2 w-75" type="search" placeholder="Search for products" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div id="productCarousel" class="carousel slide mt-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#productCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#productCarousel" data-slide-to="1"></li>
+            <li data-target="#productCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/carousel/ZA_FLAG.jpg" class="d-block w-100" alt="Featured Product 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Proud South African</h5>
+                    <p>Discover the richness of South African Products right here.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/carousel/WCOverview.jpg" class="d-block w-100" alt="Product 2">
+            </div>
+            <div class="carousel-item">
+                <img src="/carousel/Unity.jpg" class="d-block w-100" alt="Product 3">
+                <div class="carousel-caption d-none d-md-block">
+                   @*  <h5>Proud South African</h5>
+                    <p>Discover the richness of South African Products right here.</p> *@
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <style>
+       
+        .card-img-top {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover; 
+            object-position: center; 
+        }
+
+        .card-body {
+            min-height: 110px; 
+            text-align: center; 
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            height: 30px; 
+            overflow: hidden;
+            white-space: nowrap; 
+            text-overflow: ellipsis; 
+        }
+
+        .card-text {
+            font-size: 1rem; 
+            height: 30px; 
+            overflow: hidden;
+            white-space: nowrap; 
+            text-overflow: ellipsis; 
+        }
+    </style>
+
+
+    <!-- Product Cards -->
+    <div class="container mt-5">
+        <div class="row">
+            @foreach (var product in Model)
+            {
+           
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="@product.ImageUrl" alt="Product Image">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">@product.Description</p>
+                            <h5>@product.Price.ToString("C")</h5>
+                        </div>
+                        <div class="card-footer text-center">
+                            <button class="btn btn-primary" data-toggle="modal" data-target="#productModal" data-id="@product.ProductId">View Details</button>
+                            <button class="btn btn-success" onclick="addToCart(@product.ProductId)">Add to Cart</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </div>
+    </div>
+</div>
+
+<!-- Product Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" role="dialog" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">Product Details</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="" id="productImage" class="img-fluid" alt="Product Image">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 id="productName">Product Name</h5>
+                        <p id="productDescription">Product Description</p>
+                        <h5 id="productPrice">R99.99</h5>
+                        <button class="btn btn-success" id="addToCartButton">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Store the serialized products list in a JavaScript variable
+        var products = @Html.Raw(productsJson);
+
+        // Handle showing the modal with product details
+        $('#productModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); 
+            var productId = button.data('id'); // Extract info from data-* attributes
+
+            var product = products.find(p => p.productId === productId);
+
+            // Update the modal's content with the fetched product details
+            var modal = $(this);
+            modal.find('.modal-title').text(product.name);
+            modal.find('#productImage').attr('src', product.imageUrl);
+            modal.find('#productName').text(product.name);
+            modal.find('#productDescription').text(product.description);
+            modal.find('#productPrice').text('R' + product.price.toFixed(2));
+
+            // Update the "Add to Cart" button's click event inside the modal
+            modal.find('#addToCartButton').off('click').on('click', function () {
+                addToCart(product.productId); // Call the addToCart function
+                modal.modal('hide'); 
+            });
+        });
+
+        function addToCart(productId) {
+            $.ajax({
+                url: '@Url.Action("AddToCart", "Cart")',
+                type: 'POST',
+                data: { productId: productId },
+                success: function (response) {
+                    alert('Product added to cart successfully!');
+                    
+                },
+                error: function (xhr, status, error) {
+                    alert('Error adding product to cart.');
+                }
+            });
+        }
+    </script>
+}
+

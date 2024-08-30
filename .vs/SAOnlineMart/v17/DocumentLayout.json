@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\order\\_pendingorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\order\\_pendingorders.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\cart\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\auth\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\auth\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\auth\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\adminuser\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\adminuser\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\adminuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\adminuser\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\views\\admindashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\models\\datamodels\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\models\\datamodels\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\models\\datamodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\models\\datamodels\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|c:\\users\\admin\\documents\\github\\saonlinemart\\saonlinemart\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{93FEBF24-747E-4C3B-A316-00F24D17D25C}|SAOnlineMart\\SAOnlineMart.csproj|solutionrelative:saonlinemart\\controllers\\adminusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Shop\\Index.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Shop\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Shop\\Index.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Shop\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:07:16.335Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:06:39.394Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_PendingOrders.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Order\\_PendingOrders.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Order\\_PendingOrders.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Order\\_PendingOrders.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Order\\_PendingOrders.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAAMAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:06:01.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:05:38.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:05:08.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Cart\\Index.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Cart\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Cart\\Index.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Cart\\Index.cshtml",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAGIAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:04:19.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Checkout.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Cart\\Checkout.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Cart\\Checkout.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Cart\\Checkout.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Cart\\Checkout.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:03:51.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Settings.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Auth\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Settings.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Auth\\Settings.cshtml",
+              "ViewState": "AQIAAIEAAAAAAAAAAAAAADUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:03:06.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAAMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:02:55.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Login.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\Auth\\Login.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\Auth\\Login.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\Auth\\Login.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAABcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:02:46.218Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminUser\\Login.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\AdminUser\\Login.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminUser\\Login.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\AdminUser\\Login.cshtml",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAABsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:02:34.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminUser\\Create.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\AdminUser\\Create.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminUser\\Create.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\AdminUser\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:02:05.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Views\\AdminDashboard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Views\\AdminDashboard\\Index.cshtml",
+              "RelativeToolTip": "SAOnlineMart\\Views\\AdminDashboard\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAMYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-08-30T19:00:35.814Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Models\\DataModels\\CartItem.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Models\\DataModels\\CartItem.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Models\\DataModels\\CartItem.cs",
+              "RelativeToolTip": "SAOnlineMart\\Models\\DataModels\\CartItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:59:59.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Models\\DataModels\\Order.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Models\\DataModels\\Order.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Models\\DataModels\\Order.cs",
+              "RelativeToolTip": "SAOnlineMart\\Models\\DataModels\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:59:41.786Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SAOnlineMart\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwCIAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:59:09.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CartController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\CartController.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Controllers\\CartController.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\CartController.cs",
+              "RelativeToolTip": "SAOnlineMart\\Controllers\\CartController.cs",
+              "ViewState": "AQIAAGUAAAAAAAAAAAAswEAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:58:51.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SAOnlineMart\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAowEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:58:33.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AdminUserController.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\AdminUserController.cs",
+              "RelativeDocumentMoniker": "SAOnlineMart\\Controllers\\AdminUserController.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\GitHub\\SAOnlineMart\\SAOnlineMart\\Controllers\\AdminUserController.cs",
+              "RelativeToolTip": "SAOnlineMart\\Controllers\\AdminUserController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T18:57:55.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

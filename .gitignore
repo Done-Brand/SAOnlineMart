@@ -1,0 +1,14 @@
+# .NET files
+bin/
+obj/
+*.user
+*.rsuser
+*.suo
+*.cache
+.vscode/
+
+# Node.js files
+node_modules/
+
+# macOS files
+.DS_Store

@@ -1,0 +1,60 @@
+﻿@model SAOnlineMart.Models.ViewModels.LoginModel.InputModel
+
+<style>
+   
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        color: white; 
+    }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<!-- Page Content -->
+<div class="content-wrapper">
+    <h2>Login</h2>
+
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" class="form-control" type="password" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-group form-check">
+            <input asp-for="RememberMe" class="form-check-input" type="checkbox" />
+            <label asp-for="RememberMe" class="form-check-label"></label>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+
+    <div>
+        <a asp-controller="Auth" asp-action="Register">Don't have an account? Register here</a>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

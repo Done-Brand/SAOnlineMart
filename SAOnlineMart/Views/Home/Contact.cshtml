@@ -1,0 +1,75 @@
+﻿@model SAOnlineMart.Models.ContactFormModel
+
+@{
+    ViewData["Title"] = "Contact Us";
+}
+
+<style>
+ 
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+    }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<!-- Page Content -->
+<div class="content-wrapper">
+    <div class="container">
+        <h2 class="text-white">Contact Us</h2>
+        <p class="text-white">If you have any questions, concerns, or need assistance, please feel free to reach out to us using the form below.</p>
+
+        <form asp-action="SubmitContactForm" method="post" class="contact-form">
+            <div class="form-group">
+                <label asp-for="FullName" class="control-label text-white">Full Name</label>
+                <input asp-for="FullName" class="form-control" placeholder="Your Name" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label text-white">Email Address</label>
+                <input asp-for="Email" type="email" class="form-control" placeholder="Your Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label text-white">Subject</label>
+                <select asp-for="Subject" class="form-control">
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="Technical Support">Technical Support</option>
+                    <option value="Billing">Billing</option>
+                    <option value="Feedback">Feedback</option>
+                </select>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Message" class="control-label text-white">Message</label>
+                <textarea asp-for="Message" class="form-control" rows="5" placeholder="Your Message"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

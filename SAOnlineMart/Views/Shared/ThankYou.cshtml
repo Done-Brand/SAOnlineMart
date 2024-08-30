@@ -1,0 +1,44 @@
+﻿@page
+
+<style>
+    /* Reuse the background and overlay styles from the Shop page */
+    body {
+        background: url('/images/SouthAfricanFlag.jpeg') no-repeat center center fixed;
+        background-size: cover;
+    }
+
+    .background-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .content-wrapper {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        color: white; /* Set the text color to white */
+    }
+
+    /* Ensure the button text is also white */
+    .btn-primary {
+        color: white;
+    }
+</style>
+
+<!-- Background Overlay -->
+<div class="background-overlay"></div>
+
+<!-- Page Content -->
+<div class="content-wrapper">
+    <div class="container text-center mt-5">
+        <h2>Thank You for Your Purchase!</h2>
+        <p>We appreciate your business. Your order has been successfully placed.</p>
+        <p>Website proudly developed by Doné Brand.</p>
+        <a href="@Url.Action("Index", "Shop")" class="btn btn-primary">Continue Shopping</a>
+    </div>
+</div>
